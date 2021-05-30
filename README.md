@@ -44,6 +44,7 @@ The IMU system detects angular velocities, which are then used to compute the pi
   <li><b>MPU 6050</b> IMU Sensor</li>
   <li>Your computer's camera will do fine</li>
 </ul>
+
 ### Software
 <ul>
   <li><b>CSV</b></li>
