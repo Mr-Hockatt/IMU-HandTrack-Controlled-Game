@@ -1,7 +1,7 @@
 # IMU-HandTrack-Controlled-Game
 Python game controlled by and Arduino-based IMU system and handtracking via openCV and Mediapipe.</br>
 This project was created as part of my <b>Digital Signal Processing</b> class on my 7th semester of Mechatronics Engineering.</br></br>
-Special thanks to <b>Catalina Kowoll B.</b> and <b>Cristian Laverde</b> (aka Cristian-LaGreen here on <a href="https://github.com/Cristian-LaGreen">Github</a>) for begin my lab mates and doing this project with me :)
+Special thanks to <b>Catalina Kowoll B.</b> and <b>Cristian Laverde</b> (aka Cristian-LaGreen <a href="https://github.com/Cristian-LaGreen">here on Github</a>) for begin my lab mates and doing this project with me :)
 
 ![gui](https://user-images.githubusercontent.com/53312754/120088795-e649a180-c0b9-11eb-98be-0b633f35de2f.png)
 
