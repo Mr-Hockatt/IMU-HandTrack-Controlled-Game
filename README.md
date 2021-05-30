@@ -29,8 +29,10 @@ The IMU system detects angular velocities, which are then used to compute the pi
 
 
 ## How to use it and considerations
-Change the <b>COM port</b> your Arduino is connected to in <b>line 15 of the Game.py</b> file (by default is COM3).</br>
-Both signals (IMU and Handtracking) are unified in <b>lines 572 and 573 of the Game.py</b> file. The unification is basically adding up the two signals, assigning a weight for each one based on the confidence you have for each one (i.e. if you're in a space with very bad light conditions or movement, the handtrack won't perform nice, so it's better to give it a low weight). If you want to play the game just with an IMU, then assign 1 to its signal and 0 to the camera one and viceversa.
+<b>1. </b> Change the <b>COM port</b> your Arduino is connected to in <b>line 15 of the Game.py</b> file (by default is COM3).</br>
+<b>2. </b> Both signals (IMU and Handtracking) are unified in <b>lines 572 and 573 of the Game.py</b> file. The unification is basically adding up the two signals, assigning a weight for each one based on the confidence you have for each one (i.e. if you're in a space with very bad light conditions or movement, the handtrack won't perform nice, so it's better to give it a low weight). If you want to play the game just with an IMU, then assign 1 to its signal and 0 to the camera one and viceversa if you just want handtrack.</br>
+<b>3. </b> The game also works by the use of keyboard if you want to test it.</br>
+<b>4. When RUNNING the game</b> Lay your hand still on a flat surface, as the Arduino will perfom a first calibration of the IMU and adjust offsets for each axis. Also wait for Python to perfom it's own calibration and offset finding (A message appears on the terminal, it will ask you to wait until the process is finished). After that you can proceed and enjoy the game.
 
 ![signals_unification](https://user-images.githubusercontent.com/53312754/120089356-fa43d200-c0be-11eb-8c0a-93c4d7120ad0.jpg)
 
