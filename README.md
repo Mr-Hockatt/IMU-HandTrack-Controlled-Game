@@ -25,4 +25,7 @@ For the pitch we just focused on the vertical position of the hand on the screen
 ## General explanation. How the IMU system works?
 The IMU system detects angular velocities, which are then used to compute the pitch and roll of the sensor. Once computed, they are sent through serial port to the python program in order to send the signal to the character.
 
+![imu](https://user-images.githubusercontent.com/53312754/120089158-3ece6e00-c0bd-11eb-931e-cb53583260c8.png)
+
+
 ## How to use it?
