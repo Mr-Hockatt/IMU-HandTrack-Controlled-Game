@@ -28,4 +28,27 @@ The IMU system detects angular velocities, which are then used to compute the pi
 ![imu](https://user-images.githubusercontent.com/53312754/120089158-3ece6e00-c0bd-11eb-931e-cb53583260c8.png)
 
 
-## How to use it?
+## How to use it and considerations
+Change the <b>COM port</b> your Arduino is connected to in <b>line 15 of the Game.py</b> file (by default is COM3).</br>
+Both signals (IMU and Handtracking) are unified in <b>lines 572 and 573 of the Game.py</b> file. The unification is basically adding up the two signals, assigning a weight for each one based on the confidence you have for each one (i.e. if you're in a space with very bad light conditions or movement, the handtrack won't perform nice, so it's better to give it a low weight). If you want to play the game just with an IMU, then assign 1 to its signal and 0 to the camera one and viceversa.
+
+![signals_unification](https://user-images.githubusercontent.com/53312754/120089356-fa43d200-c0be-11eb-8c0a-93c4d7120ad0.jpg)
+
+
+## Requirements
+### Hardware
+<ul>
+  <li><b>Arduino UNO</b> or <b>Mega</b></li>
+  <li><b>MPU 6050</b> IMU Sensor</li>
+  <li>Your computer's camera will do fine</li>
+</ul>
+### Software
+<ul>
+  <li><b>CSV</b></li>
+  <li><b>CV2 (OpenCV)</b></li>
+  <li><b>Matplotlib</b></li>
+  <li><b>Mediapipe</b></li>
+  <li><b>Numpy</b></li>
+  <li><b>Pygame</b></li>
+  <li><b>Serial</b></li>
+</ul>
